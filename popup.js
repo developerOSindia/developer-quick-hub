@@ -77,4 +77,29 @@ document.addEventListener("DOMContentLoaded", () => {
       uuidOut.textContent = uuid;
     });
   }
+
+  // Quick Copy Feedback Helper
+  function attachCopyHandler(buttonId, textSourceId) {
+    const btn = document.getElementById(buttonId);
+    const source = document.getElementById(textSourceId);
+    if (btn && source) {
+      btn.addEventListener("click", () => {
+        const text = source.textContent || source.value || "";
+        if (!text || text === "Waiting for input..." || text === "Click generate...") return;
+        navigator.clipboard.writeText(text).then(() => {
+          const original = btn.textContent;
+          btn.textContent = "✓ Copied!";
+          btn.style.color = "#10b981";
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.style.color = "";
+          }, 1500);
+        });
+      });
+    }
+  }
+
+  attachCopyHandler("btn-copy-jwt", "jwt-output");
+  attachCopyHandler("btn-copy-b64", "b64-output");
+  attachCopyHandler("btn-copy-uuid", "uuid-output");
 });

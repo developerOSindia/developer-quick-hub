@@ -25,7 +25,10 @@
     <div class="tab-pane active" id="pane-jwt">
       <label>Paste JWT Token:</label>
       <textarea id="jwt-input" rows="3" placeholder="eyJhbGciOi..."></textarea>
-      <button id="btn-decode-jwt" class="action-btn">Decode Claims</button>
+      <div class="btn-group">
+        <button id="btn-decode-jwt" class="action-btn">Decode Claims</button>
+        <button id="btn-copy-jwt" class="action-btn-copy">📋 Copy</button>
+      </div>
       <div class="output-box" id="jwt-output">Waiting for input...</div>
     </div>
 
@@ -36,6 +39,7 @@
       <div class="btn-group">
         <button id="btn-b64-encode" class="action-btn">Encode</button>
         <button id="btn-b64-decode" class="action-btn">Decode</button>
+        <button id="btn-copy-b64" class="action-btn-copy">📋 Copy</button>
       </div>
       <div class="output-box" id="b64-output">Waiting for input...</div>
     </div>
@@ -44,7 +48,10 @@
     <div class="tab-pane" id="pane-uuid">
       <label>Random UUIDv4:</label>
       <div class="output-box" id="uuid-output">Click generate...</div>
-      <button id="btn-gen-uuid" class="action-btn">Generate UUIDv4</button>
+      <div class="btn-group">
+        <button id="btn-gen-uuid" class="action-btn">Generate UUIDv4</button>
+        <button id="btn-copy-uuid" class="action-btn-copy">📋 Copy</button>
+      </div>
     </div>
 
     <!-- Promotional Component -->

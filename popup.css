@@ -99,7 +99,7 @@ input, textarea {
 }
 
 .action-btn {
-  background: #2563eb;
+  background: #f97316;
   color: #ffffff;
   border: none;
   padding: 6px 12px;
@@ -108,6 +108,31 @@ input, textarea {
   font-weight: 600;
   width: 100%;
   margin-bottom: 8px;
+  transition: background 0.15s ease;
+}
+
+.action-btn:hover {
+  background: #ea580c;
+}
+
+.action-btn-copy {
+  background: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 11px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.action-btn-copy:hover {
+  background: rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.4);
+  color: #f97316;
 }
 
 .btn-group {
