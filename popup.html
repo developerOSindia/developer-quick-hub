@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DeveloperOS Quick Hub</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="brand">
+        <span class="brand-title">DeveloperOS</span>
+        <span class="badge">Quick Hub</span>
+      </div>
+      <a href="https://developeros.in?utm_source=chrome_extension&utm_medium=header_banner&utm_campaign=powered_by" target="_blank" rel="noopener noreferrer" class="hub-link">⚡ Powered by DeveloperOS ↗</a>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="jwt">JWT Decoder</button>
+      <button class="tab-btn" data-tab="base64">Base64</button>
+      <button class="tab-btn" data-tab="uuid">UUID Gen</button>
+    </div>
+
+    <!-- JWT Pane -->
+    <div class="tab-pane active" id="pane-jwt">
+      <label>Paste JWT Token:</label>
+      <textarea id="jwt-input" rows="3" placeholder="eyJhbGciOi..."></textarea>
+      <button id="btn-decode-jwt" class="action-btn">Decode Claims</button>
+      <div class="output-box" id="jwt-output">Waiting for input...</div>
+    </div>
+
+    <!-- Base64 Pane -->
+    <div class="tab-pane" id="pane-base64">
+      <label>Text to Encode / Decode:</label>
+      <input type="text" id="b64-input" placeholder="Type text here...">
+      <div class="btn-group">
+        <button id="btn-b64-encode" class="action-btn">Encode</button>
+        <button id="btn-b64-decode" class="action-btn">Decode</button>
+      </div>
+      <div class="output-box" id="b64-output">Waiting for input...</div>
+    </div>
+
+    <!-- UUID Pane -->
+    <div class="tab-pane" id="pane-uuid">
+      <label>Random UUIDv4:</label>
+      <div class="output-box" id="uuid-output">Click generate...</div>
+      <button id="btn-gen-uuid" class="action-btn">Generate UUIDv4</button>
+    </div>
+
+    <!-- Promotional Component -->
+    <div style="padding: 8px 12px; background: rgba(249, 115, 22, 0.08); border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; align-items: center;">
+      <span style="font-size: 11px; color: #cbd5e1; font-weight: 500;">More Developer Tools & AI:</span>
+      <a href="https://developeros.in?utm_source=chrome_extension&utm_medium=quicktools_popup&utm_campaign=extension_referral" target="_blank" rel="noopener noreferrer" style="background: #f97316; color: #ffffff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; text-decoration: none;">
+        developeros.in ↗
+      </a>
+    </div>
+
+    <!-- Footer Banner -->
+    <footer class="popup-footer" role="contentinfo">
+      <div style="font-size: 11px; margin-bottom: 4px;">
+        Built with ❤️ by <a href="https://developeros.in?utm_source=chrome_extension&utm_medium=footer_tagline&utm_campaign=extension_referral" target="_blank" rel="noopener noreferrer" style="color: #f97316; text-decoration: none; font-weight: 600;">DeveloperOS</a>
+      </div>
+      <div style="display: flex; gap: 8px; justify-content: center; font-size: 10px; color: #94a3b8;">
+        <a href="https://developeros.in" target="_blank" rel="noopener noreferrer" style="color: #67e8f9; text-decoration: none;">Home</a>
+        <span>•</span>
+        <a href="https://tools.developeros.in" target="_blank" rel="noopener noreferrer" style="color: #67e8f9; text-decoration: none;">Tools</a>
+        <span>•</span>
+        <a href="https://github.com/developerOSindia" target="_blank" rel="noopener noreferrer" style="color: #67e8f9; text-decoration: none;">GitHub</a>
+        <span>•</span>
+        <a href="https://developeros.in/privacy" target="_blank" rel="noopener noreferrer" style="color: #67e8f9; text-decoration: none;">Privacy</a>
+      </div>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

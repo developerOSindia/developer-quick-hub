@@ -1,0 +1,10 @@
+{
+  "name": "@developeros/developer-quick-hub",
+  "version": "1.0.0",
+  "description": "DeveloperOS Quick Hub: Chrome Extension for Instant Offline Dev Tools",
+  "private": true,
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests"
+  },
+  "license": "MIT"
+}

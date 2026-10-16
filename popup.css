@@ -1,0 +1,140 @@
+body {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+}
+
+.popup-container {
+  padding: 14px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.brand-title {
+  font-weight: 700;
+  color: #38bdf8;
+  font-size: 14px;
+}
+
+.badge {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+.hub-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.hub-link:hover {
+  color: #38bdf8;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  padding: 6px 0;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+label {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #020617;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+.action-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.output-box {
+  background: #020617;
+  border: 1px solid #334155;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  min-height: 48px;
+  max-height: 120px;
+  overflow-y: auto;
+  word-break: break-all;
+  white-space: pre-wrap;
+  color: #38bdf8;
+}
+
+.popup-footer {
+  margin-top: 12px;
+  border-top: 1px solid #334155;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 10px;
+  color: #64748b;
+}

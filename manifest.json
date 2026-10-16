@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "DeveloperOS Quick Hub",
+  "version": "1.0.0",
+  "description": "Instant, zero-telemetry offline developer utilities: JWT decode, Base64 encoder, quick hash by DeveloperOS.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DeveloperOS Tools Quick Hub"
+  },
+  "permissions": ["storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
